@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comfort Real Estate Kuwait — Trusted Residential Rentals in Kuwait</title>
+<meta name="description" content="Find your perfect rental home in Kuwait. Apartments and houses in Salwa, Mishref, Bayan, Fintas, Jabriya and more. Trusted by thousands since 2018.">
+<meta name="keywords" content="Kuwait rentals, apartments Kuwait, houses Kuwait, Salwa, Mishref, Bayan, Fintas, real estate Kuwait">
+<meta property="og:title" content="Comfort Real Estate Kuwait — Residential Rentals">
+<meta property="og:description" content="2,798+ properties managed. Find apartments and houses across Kuwait's best neighborhoods.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_KW">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{base:'#0a0a0f','base-light':'#111118',coral:'#e07a5f','coral-dark':'#c4593f',teal:'#2a9d8f','teal-dark':'#1f7a6f',sand:'#f4f1de',muted:'#7a7a8a',dim:'#2a2a3a'},fontFamily:{heading:['Space Grotesk','sans-serif'],body:['Inter','sans-serif']}}}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scrollbar-width:thin;scrollbar-color:#2a2a3a #0a0a0f}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0a0a0f}::-webkit-scrollbar-thumb{background:#2a2a3a;border-radius:3px}
+html{scroll-behavior:smooth}
+body{background:#0a0a0f;color:#f0ece2;font-family:'Inter',sans-serif;overflow-x:hidden}
+
+/* Progress Bar */
+#progressBar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#e07a5f,#2a9d8f);z-index:9999;transition:width .1s linear;width:0}
+
+/* Custom Cursor */
+.cursor-dot{width:6px;height:6px;background:#e07a5f;border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:transform .1s}
+.cursor-ring{width:36px;height:36px;border:1.5px solid rgba(224,122,95,.4);border-radius:50%;position:fixed;pointer-events:none;z-index:9997;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s}
+.cursor-ring.hover{width:56px;height:56px;border-color:rgba(224,122,95,.8)}
+
+/* Glass */
+.glass{background:rgba(255,255,255,.03);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.06)}
+.glass-strong{background:rgba(255,255,255,.06);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,.1)}
+
+/* Gradient Mesh */
+.mesh-bg{position:absolute;inset:0;overflow:hidden}
+.mesh-bg::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(224,122,95,.15),transparent 70%);top:-100px;right:-100px;animation:meshFloat 8s ease-in-out infinite}
+.mesh-bg::after{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(42,157,143,.12),transparent 70%);bottom:-80px;left:-80px;animation:meshFloat 10s ease-in-out infinite reverse}
+@keyframes meshFloat{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-20px) scale(1.1)}}
+
+/* Skeleton */
+.skeleton{background:linear-gradient(90deg,rgba(255,255,255,.03) 25%,rgba(255,255,255,.06) 50%,rgba(255,255,255,.03) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:8px}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* Card Hover */
+.prop-card{transition:transform .4s cubic-bezier(.25,.46,.45,.94),box-shadow .4s ease}
+.prop-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.prop-card:hover .card-img{transform:scale(1.05)}
+.card-img{transition:transform .6s cubic-bezier(.25,.46,.45,.94)}
+
+/* Magnetic Button */
+.magnetic-btn{transition:transform .3s ease}
+
+/* Badge */
+.badge-available{background:rgba(42,157,143,.15);color:#2a9d8f;border:1px solid rgba(42,157,143,.3)}
+.badge-rented{background:rgba(255,255,255,.05);color:#7a7a8a;border:1px solid rgba(255,255,255,.1)}
+
+/* Nav Scroll */
+.nav-scrolled{background:rgba(10,10,15,.85)!important;backdrop-filter:blur(20px)!important;-webkit-backdrop-filter:blur(20px)!important;border-bottom:1px solid rgba(255,255,255,.06)!important}
+
+/* Filter Drawer */
+.drawer-overlay{opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.drawer-overlay.active{opacity:1;visibility:visible}
+.drawer-panel{transform:translateX(-100%);transition:transform .35s cubic-bezier(.25,.46,.45,.94)}
+.drawer-panel.active{transform:translateX(0)}
+
+/* Modal */
+.modal-overlay{opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.modal-overlay.active{opacity:1;visibility:visible}
+.modal-content{transform:translateY(40px) scale(.97);transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
+.modal-overlay.active .modal-content{transform:translateY(0) scale(1)}
+
+/* Gallery */
+.gallery-track{display:flex;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
+
+/* WhatsApp Float */
+.wa-float{animation:waFloat 3s ease-in-out infinite}
+@keyframes waFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* Toast */
+.toast{transform:translateY(20px);opacity:0;transition:all .3s ease}
+.toast.show{transform:translateY(0);opacity:1}
+
+/* Select Styling */
+select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237a7a8a' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+
+/* Range input */
+input[type=range]{-webkit-appearance:none;background:transparent;width:100%}
+input[type=range]::-webkit-slider-track{height:4px;background:#2a2a3a;border-radius:2px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:#e07a5f;margin-top:-7px;cursor:pointer}
+input[type=range]::-moz-range-track{height:4px;background:#2a2a3a;border-radius:2px;border:none}
+input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#e07a5f;border:none;cursor:pointer}
+
+@media(max-width:768px){.cursor-dot,.cursor-ring{display:none!important}}
+</style>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div id="progressBar"></div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Navigation -->
+<nav id="mainNav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background:transparent">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16 md:h-20">
+<a href="#" class="flex items-center gap-2 group">
+<div class="w-8 h-8 md:w-9 md:h-9 rounded-lg bg-gradient-to-br from-coral to-teal flex items-center justify-center">
+<span class="text-white font-heading font-bold text-sm md:text-base">C</span>
+</div>
+<span class="font-heading font-semibold text-sm md:text-base text-sand">Comfort<span class="text-coral">.</span></span>
+</a>
+<div class="hidden md:flex items-center gap-8">
+<a href="#listings" class="text-sm text-muted hover:text-sand transition-colors magnetic-btn">Listings</a>
+<a href="#about" class="text-sm text-muted hover:text-sand transition-colors magnetic-btn">About</a>
+<a href="#contact" class="text-sm text-muted hover:text-sand transition-colors magnetic-btn">Contact</a>
+</div>
+<div class="flex items-center gap-3">
+<a href="https://wa.me/96566593911?text=Hi%2C%20I%27m%20looking%20for%20a%20rental%20property%20in%20Kuwait" target="_blank" rel="noopener" class="flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb855] text-white text-xs font-semibold px-4 py-2.5 rounded-full transition-colors magnetic-btn">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+WhatsApp
+</a>
+<button id="mobileMenuBtn" class="md:hidden p-2 text-muted hover:text-sand transition-colors">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="md:hidden hidden glass-strong">
+<div class="px-4 py-4 flex flex-col gap-3">
+<a href="#listings" class="text-sm text-muted hover:text-sand transition-colors py-2" onclick="closeMobileMenu()">Listings</a>
+<a href="#about" class="text-sm text-muted hover:text-sand transition-colors py-2" onclick="closeMobileMenu()">About</a>
+<a href="#contact" class="text-sm text-muted hover:text-sand transition-colors py-2" onclick="closeMobileMenu()">Contact</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="relative min-h-screen flex items-center pt-20 pb-12 md:pt-0 md:pb-0 overflow-hidden">
+<div class="mesh-bg"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-base"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="max-w-3xl mx-auto text-center">
+<div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-6 hero-fade" style="opacity:0;transform:translateY(20px)">
+<span class="w-2 h-2 rounded-full bg-teal animate-pulse"></span>
+<span class="text-xs text-muted font-medium">Trusted by 3,877+ followers on Instagram</span>
+</div>
+<h1 class="font-heading font-bold text-4xl sm:text-5xl md:text-7xl tracking-tight text-sand mb-4 hero-fade" style="opacity:0;transform:translateY(20px)">
+Find Your<br><span class="bg-gradient-to-r from-coral to-teal bg-clip-text text-transparent">Comfort</span> Home
+</h1>
+<p class="text-muted text-sm sm:text-base md:text-lg max-w-lg mx-auto mb-8 hero-fade" style="opacity:0;transform:translateY(20px)">
+Residential rentals across Kuwait's most sought-after neighborhoods. Apartments, villas, and houses — handled with care.
+</p>
+<div class="flex items-center justify-center gap-3 mb-10 hero-fade" style="opacity:0;transform:translateY(20px)">
+<div class="text-center">
+<span class="block font-heading font-bold text-2xl sm:text-3xl text-coral counter" data-target="2798">0</span>
+<span class="text-[10px] sm:text-xs text-muted uppercase tracking-wider">Properties Managed</span>
+</div>
+<div class="w-px h-10 bg-dim"></div>
+<div class="text-center">
+<span class="block font-heading font-bold text-2xl sm:text-3xl text-teal counter" data-target="15">0</span>
+<span class="text-[10px] sm:text-xs text-muted uppercase tracking-wider">Areas Covered</span>
+</div>
+<div class="w-px h-10 bg-dim"></div>
+<div class="text-center">
+<span class="block font-heading font-bold text-2xl sm:text-3xl text-sand counter" data-target="6">0</span>
+<span class="text-[10px] sm:text-xs text-muted uppercase tracking-wider">Years Active</span>
+</div>
+</div>
+
+<!-- Search Bar -->
+<div class="glass-strong rounded-2xl p-3 sm:p-4 hero-fade" style="opacity:0;transform:translateY(20px)">
+<div class="flex flex-col sm:flex-row gap-3">
+<div class="flex-1">
+<label class="text-[10px] uppercase tracking-wider text-muted font-medium mb-1 block">Location</label>
+<select id="heroLocation" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-sm text-sand focus:outline-none focus:border-coral/50 transition-colors pr-8">
+<option value="">All Areas</option>
+<option>Salwa</option><option>Yarmouk</option><option>Fintas</option><option>Mishref</option><option>Bayan</option><option>Jabriya</option><option>Qortuba</option><option>South Surra</option><option>Abu Fatira</option><option>Messila</option><option>Abu Hassania</option><option>Agaila</option><option>Rawda</option><option>Mubarak Al-Kabeer</option>
+</select>
+</div>
+<div class="flex-1">
+<label class="text-[10px] uppercase tracking-wider text-muted font-medium mb-1 block">Price Range</label>
+<select id="heroPrice" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-sm text-sand focus:outline-none focus:border-coral/50 transition-colors pr-8">
+<option value="">Any Budget</option>
+<option value="0-300">Under 300 KD</option>
+<option value="300-500">300 — 500 KD</option>
+<option value="500-800">500 — 800 KD</option>
+<option value="800-1500">800 — 1,500 KD</option>
+<option value="1500-9999">1,500+ KD</option>
+</select>
+</div>
+<div class="flex-1">
+<label class="text-[10px] uppercase tracking-wider text-muted font-medium mb-1 block">Type</label>
+<select id="heroType" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-sm text-sand focus:outline-none focus:border-coral/50 transition-colors pr-8">
+<option value="">All Types</option>
+<option value="apartment">Apartment</option>
+<option value="house">House / Villa</option>
+</select>
+</div>
+<button onclick="applyHeroSearch()" class="bg-gradient-to-r from-coral to-coral-dark hover:from-coral-dark hover:to-coral text-white font-semibold text-sm px-6 py-2.5 rounded-xl transition-all hover:shadow-lg hover:shadow-coral/20 magnetic-btn flex items-center justify-center gap-2 sm:mt-5">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+Search
+</button>
+</div>
+</div>
+
+<div class="flex items-center justify-center gap-4 mt-6 hero-fade" style="opacity:0;transform:translateY(20px)">
+<a href="#listings" class="text-sm text-muted hover:text-sand transition-colors flex items-center gap-1">
+Browse all listings
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Listings Section -->
+<section id="listings" class="relative py-16 md:py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between mb-8 gap-4">
+<div>
+<span class="text-xs uppercase tracking-widest text-coral font-medium">Featured Listings</span>
+<h2 class="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-sand mt-1">Available Properties</h2>
+</div>
+<div class="flex items-center gap-3">
+<button id="filterToggle" class="flex items-center gap-2 glass rounded-xl px-4 py-2.5 text-sm text-muted hover:text-sand transition-colors md:hidden">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M7 12h10M10 18h4"/></svg>
+Filters
+</button>
+<select id="sortSelect" onchange="sortProperties()" class="glass rounded-xl px-4 py-2.5 text-sm text-muted focus:outline-none focus:text-sand transition-colors pr-8">
+<option value="newest">Newest First</option>
+<option value="price-asc">Price: Low → High</option>
+<option value="price-desc">Price: High → Low</option>
+<option value="area-desc">Largest First</option>
+</select>
+</div>
+</div>
+
+<div class="flex gap-6">
+<!-- Filter Sidebar (Desktop) -->
+<aside class="hidden md:block w-64 flex-shrink-0">
+<div class="glass rounded-2xl p-5 sticky top-24 space-y-6">
+<div>
+<h3 class="text-xs uppercase tracking-widest text-muted font-medium mb-3">Property Type</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer group"><input type="checkbox" value="apartment" class="filter-type hidden peer"><span class="w-4 h-4 rounded border border-white/20 flex items-center justify-center peer-checked:bg-coral peer-checked:border-coral transition-colors"><svg class="w-2.5 h-2.5 text-white hidden peer-checked:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span class="text-sm text-muted group-hover:text-sand transition-colors">Apartment</span></label>
+<label class="flex items-center gap-2 cursor-pointer group"><input type="checkbox" value="house" class="filter-type hidden peer"><span class="w-4 h-4 rounded border border-white/20 flex items-center justify-center peer-checked:bg-coral peer-checked:border-coral transition-colors"><svg class="w-2.5 h-2.5 text-white hidden peer-checked:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span class="text-sm text-muted group-hover:text-sand transition-colors">House / Villa</span></label>
+</div>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-widest text-muted font-medium mb-3">Price Range (KD)</h3>
+<input type="range" id="priceRange" min="0" max="1500" value="1500" step="50" oninput="updatePriceLabel(this.value);filterProperties()" class="w-full">
+<div class="flex justify-between text-xs text-muted mt-1"><span>0</span><span id="priceLabel">1,500+</span></div>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-widest text-muted font-medium mb-3">Bedrooms</h3>
+<div class="flex flex-wrap gap-2">
+<button onclick="toggleBedFilter(this,'any')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors active-bed">Any</button>
+<button onclick="toggleBedFilter(this,'1')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors">1+</button>
+<button onclick="toggleBedFilter(this,'2')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors">2+</button>
+<button onclick="toggleBedFilter(this,'3')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors">3+</button>
+<button onclick="toggleBedFilter(this,'4')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors">4+</button>
+</div>
+</div>
+<div>
+<h3 class="text-xs uppercase tracking-widest text-muted font-medium mb-3">Status</h3>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer group"><input type="radio" name="status" value="all" checked class="filter-status hidden peer"><span class="w-4 h-4 rounded-full border border-white/20 flex items-center justify-center peer-checked:border-coral transition-colors"><span class="w-2 h-2 rounded-full bg-coral scale-0 peer-checked:scale-100 transition-transform"></span></span><span class="text-sm text-muted group-hover:text-sand transition-colors">All</span></label>
+<label class="flex items-center gap-2 cursor-pointer group"><input type="radio" name="status" value="available" class="filter-status hidden peer"><span class="w-4 h-4 rounded-full border border-white/20 flex items-center justify-center peer-che
