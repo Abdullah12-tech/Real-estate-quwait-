@@ -1,277 +1,1257 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comfort Real Estate Kuwait — Trusted Residential Rentals in Kuwait</title>
-<meta name="description" content="Find your perfect rental home in Kuwait. Apartments and houses in Salwa, Mishref, Bayan, Fintas, Jabriya and more. Trusted by thousands since 2018.">
-<meta name="keywords" content="Kuwait rentals, apartments Kuwait, houses Kuwait, Salwa, Mishref, Bayan, Fintas, real estate Kuwait">
-<meta property="og:title" content="Comfort Real Estate Kuwait — Residential Rentals">
-<meta property="og:description" content="2,798+ properties managed. Find apartments and houses across Kuwait's best neighborhoods.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_KW">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config={theme:{extend:{colors:{base:'#0a0a0f','base-light':'#111118',coral:'#e07a5f','coral-dark':'#c4593f',teal:'#2a9d8f','teal-dark':'#1f7a6f',sand:'#f4f1de',muted:'#7a7a8a',dim:'#2a2a3a'},fontFamily:{heading:['Space Grotesk','sans-serif'],body:['Inter','sans-serif']}}}}
-</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;scrollbar-width:thin;scrollbar-color:#2a2a3a #0a0a0f}
-::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0a0a0f}::-webkit-scrollbar-thumb{background:#2a2a3a;border-radius:3px}
-html{scroll-behavior:smooth}
-body{background:#0a0a0f;color:#f0ece2;font-family:'Inter',sans-serif;overflow-x:hidden}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Comfort Real Estate Kuwait | Premium Rentals in Salwa, Yarmouk, Fintas & More</title>
+    <meta name="description" content="Find your perfect home in Kuwait. Comfort Real Estate offers premium apartments and houses for rent in Salwa, Yarmouk, Fintas, Mishref, Bayan, and more areas. WhatsApp us today.">
+    <meta name="keywords" content="Kuwait real estate, rent apartment Kuwait, house rental Salwa, Yarmouk apartment, Fintas rental, Mishref property, Bayan house, Jabriya apartment">
+    <meta name="author" content="Comfort Real Estate Kuwait">
+    <meta name="robots" content="index, follow">
 
-/* Progress Bar */
-#progressBar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#e07a5f,#2a9d8f);z-index:9999;transition:width .1s linear;width:0}
+    <!-- Open Graph -->
+    <meta property="og:title" content="Comfort Real Estate Kuwait | Premium Rentals">
+    <meta property="og:description" content="2,798+ properties managed. Find apartments & houses for rent across Kuwait. WhatsApp: 66593911">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://comfortrealestatekw.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200">
+    <meta property="og:locale" content="en_KW">
 
-/* Custom Cursor */
-.cursor-dot{width:6px;height:6px;background:#e07a5f;border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:transform .1s}
-.cursor-ring{width:36px;height:36px;border:1.5px solid rgba(224,122,95,.4);border-radius:50%;position:fixed;pointer-events:none;z-index:9997;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s}
-.cursor-ring.hover{width:56px;height:56px;border-color:rgba(224,122,95,.8)}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Comfort Real Estate Kuwait">
+    <meta name="twitter:description" content="Premium rentals across Kuwait. 2,798+ properties managed.">
 
-/* Glass */
-.glass{background:rgba(255,255,255,.03);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.06)}
-.glass-strong{background:rgba(255,255,255,.06);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid rgba(255,255,255,.1)}
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://unpkg.com">
 
-/* Gradient Mesh */
-.mesh-bg{position:absolute;inset:0;overflow:hidden}
-.mesh-bg::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(224,122,95,.15),transparent 70%);top:-100px;right:-100px;animation:meshFloat 8s ease-in-out infinite}
-.mesh-bg::after{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(42,157,143,.12),transparent 70%);bottom:-80px;left:-80px;animation:meshFloat 10s ease-in-out infinite reverse}
-@keyframes meshFloat{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-20px) scale(1.1)}}
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-/* Skeleton */
-.skeleton{background:linear-gradient(90deg,rgba(255,255,255,.03) 25%,rgba(255,255,255,.06) 50%,rgba(255,255,255,.03) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:8px}
-@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: '#0a0a0f',
+                        surface: '#12121a',
+                        surfaceHover: '#1a1a25',
+                        coral: '#e07a5f',
+                        teal: '#2a9d8f',
+                        sand: '#f4a261',
+                        muted: '#6b7280',
+                        border: 'rgba(255,255,255,0.06)'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Space Grotesk', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 
-/* Card Hover */
-.prop-card{transition:transform .4s cubic-bezier(.25,.46,.45,.94),box-shadow .4s ease}
-.prop-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
-.prop-card:hover .card-img{transform:scale(1.05)}
-.card-img{transition:transform .6s cubic-bezier(.25,.46,.45,.94)}
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-/* Magnetic Button */
-.magnetic-btn{transition:transform .3s ease}
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-/* Badge */
-.badge-available{background:rgba(42,157,143,.15);color:#2a9d8f;border:1px solid rgba(42,157,143,.3)}
-.badge-rented{background:rgba(255,255,255,.05);color:#7a7a8a;border:1px solid rgba(255,255,255,.1)}
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Nav Scroll */
-.nav-scrolled{background:rgba(10,10,15,.85)!important;backdrop-filter:blur(20px)!important;-webkit-backdrop-filter:blur(20px)!important;border-bottom:1px solid rgba(255,255,255,.06)!important}
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background: #0a0a0f; 
+            color: #f3f4f6; 
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
 
-/* Filter Drawer */
-.drawer-overlay{opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
-.drawer-overlay.active{opacity:1;visibility:visible}
-.drawer-panel{transform:translateX(-100%);transition:transform .35s cubic-bezier(.25,.46,.45,.94)}
-.drawer-panel.active{transform:translateX(0)}
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0f; }
+        ::-webkit-scrollbar-thumb { background: #2a9d8f; border-radius: 3px; }
 
-/* Modal */
-.modal-overlay{opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
-.modal-overlay.active{opacity:1;visibility:visible}
-.modal-content{transform:translateY(40px) scale(.97);transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
-.modal-overlay.active .modal-content{transform:translateY(0) scale(1)}
+        /* Progress Bar */
+        #progressBar {
+            position: fixed; top: 0; left: 0; height: 2px;
+            background: linear-gradient(90deg, #e07a5f, #2a9d8f);
+            z-index: 9999; width: 0%; transition: width 0.1s;
+        }
 
-/* Gallery */
-.gallery-track{display:flex;transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
+        /* Custom Cursor */
+        .custom-cursor {
+            position: fixed; width: 20px; height: 20px;
+            border: 2px solid #e07a5f; border-radius: 50%;
+            pointer-events: none; z-index: 10000;
+            transition: transform 0.15s ease, width 0.2s, height 0.2s, border-color 0.2s;
+            transform: translate(-50%, -50%); mix-blend-mode: difference;
+        }
+        .custom-cursor.hovering {
+            width: 50px; height: 50px;
+            border-color: #2a9d8f; background: rgba(42,157,143,0.1);
+        }
 
-/* WhatsApp Float */
-.wa-float{animation:waFloat 3s ease-in-out infinite}
-@keyframes waFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+        /* Mesh Gradient Background */
+        .mesh-gradient {
+            position: absolute; inset: 0; overflow: hidden;
+            background: #0a0a0f;
+        }
+        .mesh-gradient::before {
+            content: ''; position: absolute;
+            width: 120%; height: 120%; top: -10%; left: -10%;
+            background: 
+                radial-gradient(ellipse 60% 50% at 20% 40%, rgba(224,122,95,0.15) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 60% at 80% 60%, rgba(42,157,143,0.12) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 40% at 50% 20%, rgba(244,162,97,0.08) 0%, transparent 60%);
+            animation: meshMove 20s ease-in-out infinite alternate;
+        }
+        @keyframes meshMove {
+            0% { transform: translate(0,0) rotate(0deg); }
+            50% { transform: translate(3%,2%) rotate(2deg); }
+            100% { transform: translate(-2%,-1%) rotate(-1deg); }
+        }
 
-/* Toast */
-.toast{transform:translateY(20px);opacity:0;transition:all .3s ease}
-.toast.show{transform:translateY(0);opacity:1}
+        /* Glass Card */
+        .glass-card {
+            background: rgba(18,18,26,0.7);
+            backdrop-filter: blur(20px) saturate(1.2);
+            -webkit-backdrop-filter: blur(20px) saturate(1.2);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
 
-/* Select Styling */
-select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237a7a8a' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+        /* Magnetic Button */
+        .magnetic-btn {
+            position: relative; display: inline-flex;
+            align-items: center; justify-content: center;
+            transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+        }
+        .magnetic-btn::before {
+            content: ''; position: absolute; inset: -2px;
+            border-radius: inherit;
+            background: linear-gradient(135deg, #e07a5f, #2a9d8f);
+            opacity: 0; transition: opacity 0.3s;
+            z-index: -1;
+        }
+        .magnetic-btn:hover::before { opacity: 1; }
 
-/* Range input */
-input[type=range]{-webkit-appearance:none;background:transparent;width:100%}
-input[type=range]::-webkit-slider-track{height:4px;background:#2a2a3a;border-radius:2px}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:#e07a5f;margin-top:-7px;cursor:pointer}
-input[type=range]::-moz-range-track{height:4px;background:#2a2a3a;border-radius:2px;border:none}
-input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#e07a5f;border:none;cursor:pointer}
+        /* Property Card */
+        .property-card {
+            transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1),
+                        box-shadow 0.4s ease;
+        }
+        .property-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5),
+                        0 0 0 1px rgba(224,122,95,0.1);
+        }
+        .property-card .card-image {
+            transition: transform 0.6s cubic-bezier(0.34,1.56,0.64,1);
+        }
+        .property-card:hover .card-image {
+            transform: scale(1.05);
+        }
 
-@media(max-width:768px){.cursor-dot,.cursor-ring{display:none!important}}
-</style>
+        /* Skeleton Loading */
+        .skeleton {
+            background: linear-gradient(90deg, #1a1a25 25%, #252535 50%, #1a1a25 75%);
+            background-size: 200% 100%;
+            animation: skeletonShimmer 1.5s infinite;
+            border-radius: 8px;
+        }
+        @keyframes skeletonShimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* Stagger Animation */
+        .stagger-item {
+            opacity: 0; transform: translateY(30px);
+        }
+
+        /* Counter */
+        .counter-digit {
+            display: inline-block;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Filter Pill */
+        .filter-pill {
+            transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+        }
+        .filter-pill.active {
+            background: linear-gradient(135deg, #e07a5f, #2a9d8f);
+            color: white; border-color: transparent;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            opacity: 0; visibility: hidden;
+            transition: all 0.4s ease;
+        }
+        .modal-overlay.open {
+            opacity: 1; visibility: visible;
+        }
+        .modal-content {
+            transform: scale(0.95) translateY(20px);
+            transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+        }
+        .modal-overlay.open .modal-content {
+            transform: scale(1) translateY(0);
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            animation: whatsappPulse 2s infinite;
+        }
+        @keyframes whatsappPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+            50% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+        }
+
+        /* Image Gallery */
+        .gallery-slide {
+            transition: transform 0.5s cubic-bezier(0.34,1.56,0.64,1);
+        }
+
+        /* Nav */
+        .nav-scrolled {
+            background: rgba(10,10,15,0.9) !important;
+            backdrop-filter: blur(20px) !important;
+            border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+        }
+
+        /* RTL Support */
+        [dir="rtl"] .rtl-flip { transform: scaleX(-1); }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .custom-cursor { display: none !important; }
+        }
+
+        /* Selection */
+        ::selection {
+            background: rgba(224,122,95,0.3);
+            color: #fff;
+        }
+
+        /* Focus */
+        *:focus-visible {
+            outline: 2px solid #e07a5f;
+            outline-offset: 2px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Progress Bar -->
+    <div id="progressBar"></div>
 
-<!-- Progress Bar -->
-<div id="progressBar"></div>
+    <!-- Custom Cursor (Desktop) -->
+    <div class="custom-cursor hidden md:block" id="customCursor"></div>
 
-<!-- Custom Cursor -->
-<div class="cursor-dot" id="cursorDot"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+    <!-- Navigation -->
+    <nav id="mainNav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" style="background: transparent;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="#" class="flex items-center gap-3 magnetic-btn" data-magnetic>
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-coral to-teal flex items-center justify-center">
+                        <i data-lucide="home" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="font-display font-bold text-lg text-white tracking-tight">Comfort</span>
+                        <span class="font-display text-sm text-muted block -mt-1">Real Estate Kuwait</span>
+                    </div>
+                </a>
 
-<!-- Navigation -->
-<nav id="mainNav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background:transparent">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-center justify-between h-16 md:h-20">
-<a href="#" class="flex items-center gap-2 group">
-<div class="w-8 h-8 md:w-9 md:h-9 rounded-lg bg-gradient-to-br from-coral to-teal flex items-center justify-center">
-<span class="text-white font-heading font-bold text-sm md:text-base">C</span>
-</div>
-<span class="font-heading font-semibold text-sm md:text-base text-sand">Comfort<span class="text-coral">.</span></span>
-</a>
-<div class="hidden md:flex items-center gap-8">
-<a href="#listings" class="text-sm text-muted hover:text-sand transition-colors magnetic-btn">Listings</a>
-<a href="#about" class="text-sm text-muted hover:text-sand transition-colors magnetic-btn">About</a>
-<a href="#contact" class="text-sm text-muted hover:text-sand transition-colors magnetic-btn">Contact</a>
-</div>
-<div class="flex items-center gap-3">
-<a href="https://wa.me/96566593911?text=Hi%2C%20I%27m%20looking%20for%20a%20rental%20property%20in%20Kuwait" target="_blank" rel="noopener" class="flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb855] text-white text-xs font-semibold px-4 py-2.5 rounded-full transition-colors magnetic-btn">
-<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-WhatsApp
-</a>
-<button id="mobileMenuBtn" class="md:hidden p-2 text-muted hover:text-sand transition-colors">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-</button>
-</div>
-</div>
-</div>
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="md:hidden hidden glass-strong">
-<div class="px-4 py-4 flex flex-col gap-3">
-<a href="#listings" class="text-sm text-muted hover:text-sand transition-colors py-2" onclick="closeMobileMenu()">Listings</a>
-<a href="#about" class="text-sm text-muted hover:text-sand transition-colors py-2" onclick="closeMobileMenu()">About</a>
-<a href="#contact" class="text-sm text-muted hover:text-sand transition-colors py-2" onclick="closeMobileMenu()">Contact</a>
-</div>
-</div>
-</nav>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#listings" class="text-sm text-gray-300 hover:text-white transition-colors magnetic-btn" data-magnetic>Listings</a>
+                    <a href="#about" class="text-sm text-gray-300 hover:text-white transition-colors magnetic-btn" data-magnetic>About</a>
+                    <a href="#contact" class="text-sm text-gray-300 hover:text-white transition-colors magnetic-btn" data-magnetic>Contact</a>
+                </div>
 
-<!-- Hero Section -->
-<section id="hero" class="relative min-h-screen flex items-center pt-20 pb-12 md:pt-0 md:pb-0 overflow-hidden">
-<div class="mesh-bg"></div>
-<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-base"></div>
-<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-<div class="max-w-3xl mx-auto text-center">
-<div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-6 hero-fade" style="opacity:0;transform:translateY(20px)">
-<span class="w-2 h-2 rounded-full bg-teal animate-pulse"></span>
-<span class="text-xs text-muted font-medium">Trusted by 3,877+ followers on Instagram</span>
-</div>
-<h1 class="font-heading font-bold text-4xl sm:text-5xl md:text-7xl tracking-tight text-sand mb-4 hero-fade" style="opacity:0;transform:translateY(20px)">
-Find Your<br><span class="bg-gradient-to-r from-coral to-teal bg-clip-text text-transparent">Comfort</span> Home
-</h1>
-<p class="text-muted text-sm sm:text-base md:text-lg max-w-lg mx-auto mb-8 hero-fade" style="opacity:0;transform:translateY(20px)">
-Residential rentals across Kuwait's most sought-after neighborhoods. Apartments, villas, and houses — handled with care.
-</p>
-<div class="flex items-center justify-center gap-3 mb-10 hero-fade" style="opacity:0;transform:translateY(20px)">
-<div class="text-center">
-<span class="block font-heading font-bold text-2xl sm:text-3xl text-coral counter" data-target="2798">0</span>
-<span class="text-[10px] sm:text-xs text-muted uppercase tracking-wider">Properties Managed</span>
-</div>
-<div class="w-px h-10 bg-dim"></div>
-<div class="text-center">
-<span class="block font-heading font-bold text-2xl sm:text-3xl text-teal counter" data-target="15">0</span>
-<span class="text-[10px] sm:text-xs text-muted uppercase tracking-wider">Areas Covered</span>
-</div>
-<div class="w-px h-10 bg-dim"></div>
-<div class="text-center">
-<span class="block font-heading font-bold text-2xl sm:text-3xl text-sand counter" data-target="6">0</span>
-<span class="text-[10px] sm:text-xs text-muted uppercase tracking-wider">Years Active</span>
-</div>
-</div>
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/96566593911" target="_blank" rel="noopener"
+                       class="magnetic-btn flex items-center gap-2 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-medium hover:bg-[#128C7E] transition-colors"
+                       data-magnetic>
+                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">WhatsApp</span>
+                    </a>
+                    <button id="mobileMenuBtn" class="md:hidden p-2 text-white">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<!-- Search Bar -->
-<div class="glass-strong rounded-2xl p-3 sm:p-4 hero-fade" style="opacity:0;transform:translateY(20px)">
-<div class="flex flex-col sm:flex-row gap-3">
-<div class="flex-1">
-<label class="text-[10px] uppercase tracking-wider text-muted font-medium mb-1 block">Location</label>
-<select id="heroLocation" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-sm text-sand focus:outline-none focus:border-coral/50 transition-colors pr-8">
-<option value="">All Areas</option>
-<option>Salwa</option><option>Yarmouk</option><option>Fintas</option><option>Mishref</option><option>Bayan</option><option>Jabriya</option><option>Qortuba</option><option>South Surra</option><option>Abu Fatira</option><option>Messila</option><option>Abu Hassania</option><option>Agaila</option><option>Rawda</option><option>Mubarak Al-Kabeer</option>
-</select>
-</div>
-<div class="flex-1">
-<label class="text-[10px] uppercase tracking-wider text-muted font-medium mb-1 block">Price Range</label>
-<select id="heroPrice" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-sm text-sand focus:outline-none focus:border-coral/50 transition-colors pr-8">
-<option value="">Any Budget</option>
-<option value="0-300">Under 300 KD</option>
-<option value="300-500">300 — 500 KD</option>
-<option value="500-800">500 — 800 KD</option>
-<option value="800-1500">800 — 1,500 KD</option>
-<option value="1500-9999">1,500+ KD</option>
-</select>
-</div>
-<div class="flex-1">
-<label class="text-[10px] uppercase tracking-wider text-muted font-medium mb-1 block">Type</label>
-<select id="heroType" class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-sm text-sand focus:outline-none focus:border-coral/50 transition-colors pr-8">
-<option value="">All Types</option>
-<option value="apartment">Apartment</option>
-<option value="house">House / Villa</option>
-</select>
-</div>
-<button onclick="applyHeroSearch()" class="bg-gradient-to-r from-coral to-coral-dark hover:from-coral-dark hover:to-coral text-white font-semibold text-sm px-6 py-2.5 rounded-xl transition-all hover:shadow-lg hover:shadow-coral/20 magnetic-btn flex items-center justify-center gap-2 sm:mt-5">
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-Search
-</button>
-</div>
-</div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 z-40 bg-base/95 backdrop-blur-xl hidden">
+        <div class="flex flex-col items-center justify-center h-full gap-8">
+            <a href="#listings" class="text-2xl font-display text-white mobile-menu-link">Listings</a>
+            <a href="#about" class="text-2xl font-display text-white mobile-menu-link">About</a>
+            <a href="#contact" class="text-2xl font-display text-white mobile-menu-link">Contact</a>
+            <button id="closeMobileMenu" class="absolute top-6 right-6 text-white">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+        </div>
+    </div>
 
-<div class="flex items-center justify-center gap-4 mt-6 hero-fade" style="opacity:0;transform:translateY(20px)">
-<a href="#listings" class="text-sm text-muted hover:text-sand transition-colors flex items-center gap-1">
-Browse all listings
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-</a>
-</div>
-</div>
-</div>
-</section>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="mesh-gradient"></div>
 
-<!-- Listings Section -->
-<section id="listings" class="relative py-16 md:py-24">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-col md:flex-row md:items-end md:justify-between mb-8 gap-4">
-<div>
-<span class="text-xs uppercase tracking-widest text-coral font-medium">Featured Listings</span>
-<h2 class="font-heading font-bold text-2xl sm:text-3xl md:text-4xl text-sand mt-1">Available Properties</h2>
-</div>
-<div class="flex items-center gap-3">
-<button id="filterToggle" class="flex items-center gap-2 glass rounded-xl px-4 py-2.5 text-sm text-muted hover:text-sand transition-colors md:hidden">
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M7 12h10M10 18h4"/></svg>
-Filters
-</button>
-<select id="sortSelect" onchange="sortProperties()" class="glass rounded-xl px-4 py-2.5 text-sm text-muted focus:outline-none focus:text-sand transition-colors pr-8">
-<option value="newest">Newest First</option>
-<option value="price-asc">Price: Low → High</option>
-<option value="price-desc">Price: High → Low</option>
-<option value="area-desc">Largest First</option>
-</select>
-</div>
-</div>
+        <!-- Floating Elements -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-coral/5 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-teal/5 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        </div>
 
-<div class="flex gap-6">
-<!-- Filter Sidebar (Desktop) -->
-<aside class="hidden md:block w-64 flex-shrink-0">
-<div class="glass rounded-2xl p-5 sticky top-24 space-y-6">
-<div>
-<h3 class="text-xs uppercase tracking-widest text-muted font-medium mb-3">Property Type</h3>
-<div class="space-y-2">
-<label class="flex items-center gap-2 cursor-pointer group"><input type="checkbox" value="apartment" class="filter-type hidden peer"><span class="w-4 h-4 rounded border border-white/20 flex items-center justify-center peer-checked:bg-coral peer-checked:border-coral transition-colors"><svg class="w-2.5 h-2.5 text-white hidden peer-checked:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span class="text-sm text-muted group-hover:text-sand transition-colors">Apartment</span></label>
-<label class="flex items-center gap-2 cursor-pointer group"><input type="checkbox" value="house" class="filter-type hidden peer"><span class="w-4 h-4 rounded border border-white/20 flex items-center justify-center peer-checked:bg-coral peer-checked:border-coral transition-colors"><svg class="w-2.5 h-2.5 text-white hidden peer-checked:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span><span class="text-sm text-muted group-hover:text-sand transition-colors">House / Villa</span></label>
-</div>
-</div>
-<div>
-<h3 class="text-xs uppercase tracking-widest text-muted font-medium mb-3">Price Range (KD)</h3>
-<input type="range" id="priceRange" min="0" max="1500" value="1500" step="50" oninput="updatePriceLabel(this.value);filterProperties()" class="w-full">
-<div class="flex justify-between text-xs text-muted mt-1"><span>0</span><span id="priceLabel">1,500+</span></div>
-</div>
-<div>
-<h3 class="text-xs uppercase tracking-widest text-muted font-medium mb-3">Bedrooms</h3>
-<div class="flex flex-wrap gap-2">
-<button onclick="toggleBedFilter(this,'any')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors active-bed">Any</button>
-<button onclick="toggleBedFilter(this,'1')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors">1+</button>
-<button onclick="toggleBedFilter(this,'2')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors">2+</button>
-<button onclick="toggleBedFilter(this,'3')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors">3+</button>
-<button onclick="toggleBedFilter(this,'4')" class="bed-btn text-xs px-3 py-1.5 rounded-lg border border-white/10 text-muted hover:text-sand hover:border-white/20 transition-colors">4+</button>
-</div>
-</div>
-<div>
-<h3 class="text-xs uppercase tracking-widest text-muted font-medium mb-3">Status</h3>
-<div class="space-y-2">
-<label class="flex items-center gap-2 cursor-pointer group"><input type="radio" name="status" value="all" checked class="filter-status hidden peer"><span class="w-4 h-4 rounded-full border border-white/20 flex items-center justify-center peer-checked:border-coral transition-colors"><span class="w-2 h-2 rounded-full bg-coral scale-0 peer-checked:scale-100 transition-transform"></span></span><span class="text-sm text-muted group-hover:text-sand transition-colors">All</span></label>
-<label class="flex items-center gap-2 cursor-pointer group"><input type="radio" name="status" value="available" class="filter-status hidden peer"><span class="w-4 h-4 rounded-full border border-white/20 flex items-center justify-center peer-che
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+            <div class="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card">
+                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                <span class="text-sm text-gray-300">Currently Active in Kuwait</span>
+            </div>
+
+            <h1 class="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Find Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-coral to-sand">Perfect Home</span><br>
+                <span class="text-2xl sm:text-3xl md:text-5xl font-medium text-gray-400">in Kuwait</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8">
+                Premium apartments and houses for rent across Salwa, Yarmouk, Fintas, Mishref, Bayan, and more.
+                Trusted by thousands of residents since 2015.
+            </p>
+
+            <!-- Animated Counter -->
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 mb-12">
+                <div class="text-center">
+                    <div class="font-display text-3xl md:text-5xl font-bold text-white">
+                        <span class="counter" data-target="2798">0</span><span class="text-coral">+</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1">Properties Managed</p>
+                </div>
+                <div class="text-center">
+                    <div class="font-display text-3xl md:text-5xl font-bold text-white">
+                        <span class="counter" data-target="3877">0</span><span class="text-teal">+</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1">Happy Clients</p>
+                </div>
+                <div class="text-center">
+                    <div class="font-display text-3xl md:text-5xl font-bold text-white">
+                        <span class="counter" data-target="14">0</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1">Areas Covered</p>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="glass-card rounded-2xl p-4 md:p-6 max-w-4xl mx-auto mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
+                    <div class="relative">
+                        <i data-lucide="map-pin" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted"></i>
+                        <select id="heroLocation" class="w-full pl-10 pr-4 py-3 rounded-xl bg-surface border border-border text-white text-sm focus:border-coral focus:outline-none appearance-none cursor-pointer">
+                            <option value="">All Locations</option>
+                            <option value="Salwa">Salwa</option>
+                            <option value="Yarmouk">Yarmouk</option>
+                            <option value="Fintas">Fintas</option>
+                            <option value="Mishref">Mishref</option>
+                            <option value="Bayan">Bayan</option>
+                            <option value="Jabriya">Jabriya</option>
+                        </select>
+                    </div>
+                    <div class="relative">
+                        <i data-lucide="banknote" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted"></i>
+                        <select id="heroPrice" class="w-full pl-10 pr-4 py-3 rounded-xl bg-surface border border-border text-white text-sm focus:border-coral focus:outline-none appearance-none cursor-pointer">
+                            <option value="">Any Price</option>
+                            <option value="0-300">Up to 300 KD</option>
+                            <option value="300-500">300 - 500 KD</option>
+                            <option value="500-800">500 - 800 KD</option>
+                            <option value="800+">800+ KD</option>
+                        </select>
+                    </div>
+                    <div class="relative">
+                        <i data-lucide="building" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted"></i>
+                        <select id="heroType" class="w-full pl-10 pr-4 py-3 rounded-xl bg-surface border border-border text-white text-sm focus:border-coral focus:outline-none appearance-none cursor-pointer">
+                            <option value="">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="house">House</option>
+                        </select>
+                    </div>
+                    <button id="heroSearchBtn" class="w-full py-3 rounded-xl bg-gradient-to-r from-coral to-teal text-white font-medium text-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+                        <i data-lucide="search" class="w-4 h-4"></i>
+                        Browse Listings
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#listings" class="magnetic-btn px-8 py-4 rounded-full bg-white text-base font-semibold hover:bg-gray-100 transition-colors" data-magnetic>
+                    View All Properties
+                </a>
+                <a href="https://wa.me/96566593911?text=Hi%20Comfort%20Real%20Estate,%20I'm%20looking%20for%20a%20property%20in%20Kuwait" 
+                   target="_blank" rel="noopener"
+                   class="magnetic-btn px-8 py-4 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-colors flex items-center justify-center gap-2" data-magnetic>
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+            <span class="text-xs text-gray-500">Scroll to explore</span>
+            <div class="w-6 h-10 rounded-full border-2 border-gray-600 flex justify-center pt-2">
+                <div class="w-1 h-2 bg-gray-400 rounded-full animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section id="listings" class="relative py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 stagger-item">
+                <span class="text-coral text-sm font-medium tracking-wider uppercase">Featured Properties</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mt-3 mb-4">Available Now</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Browse our handpicked selection of premium rentals across Kuwait's most desirable neighborhoods.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-2 mb-12 stagger-item">
+                <button class="filter-pill active px-5 py-2 rounded-full border border-border text-sm text-white" data-filter="all">All</button>
+                <button class="filter-pill px-5 py-2 rounded-full border border-border text-sm text-gray-400 hover:text-white" data-filter="apartment">Apartments</button>
+                <button class="filter-pill px-5 py-2 rounded-full border border-border text-sm text-gray-400 hover:text-white" data-filter="house">Houses</button>
+                <button class="filter-pill px-5 py-2 rounded-full border border-border text-sm text-gray-400 hover:text-white" data-filter="Salwa">Salwa</button>
+                <button class="filter-pill px-5 py-2 rounded-full border border-border text-sm text-gray-400 hover:text-white" data-filter="Yarmouk">Yarmouk</button>
+                <button class="filter-pill px-5 py-2 rounded-full border border-border text-sm text-gray-400 hover:text-white" data-filter="Fintas">Fintas</button>
+            </div>
+
+            <!-- Sort -->
+            <div class="flex justify-end mb-8">
+                <select id="sortSelect" class="bg-surface border border-border rounded-lg px-4 py-2 text-sm text-white focus:border-coral focus:outline-none">
+                    <option value="newest">Newest First</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+
+            <!-- Property Grid -->
+            <div id="propertyGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Properties injected via JS -->
+            </div>
+
+            <!-- Loading Skeleton (hidden by default) -->
+            <div id="skeletonGrid" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skeletons injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="stagger-item">
+                    <span class="text-teal text-sm font-medium tracking-wider uppercase">About Us</span>
+                    <h2 class="font-display text-3xl md:text-5xl font-bold text-white mt-3 mb-6">Your Trusted Partner in Kuwait Real Estate</h2>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Since 2015, Comfort Real Estate has been connecting families and professionals with their ideal homes across Kuwait. 
+                        We specialize in residential rentals, offering a curated portfolio of apartments and houses in the most sought-after neighborhoods.
+                    </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Our team understands that finding a home is more than just a transaction — it's about finding your comfort zone. 
+                        That's why we personally inspect every property and provide honest, detailed information to help you make the right decision.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="glass-card rounded-xl p-4">
+                            <i data-lucide="shield-check" class="w-8 h-8 text-coral mb-2"></i>
+                            <h4 class="font-semibold text-white">Verified Listings</h4>
+                            <p class="text-sm text-gray-500">Every property personally inspected</p>
+                        </div>
+                        <div class="glass-card rounded-xl p-4">
+                            <i data-lucide="clock" class="w-8 h-8 text-teal mb-2"></i>
+                            <h4 class="font-semibold text-white">Quick Response</h4>
+                            <p class="text-sm text-gray-500">WhatsApp replies within minutes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stagger-item">
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" 
+                                 alt="Modern Kuwait villa" 
+                                 class="w-full h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 glass-card rounded-xl p-6 max-w-xs">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-coral to-teal flex items-center justify-center text-white font-bold text-sm">CR</div>
+                                <div>
+                                    <p class="font-semibold text-white text-sm">Comfort Real Estate</p>
+                                    <p class="text-xs text-gray-500">Est. 2015</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-1">
+                                <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Areas Covered -->
+            <div class="mt-24">
+                <h3 class="font-display text-2xl font-bold text-white text-center mb-12 stagger-item">Areas We Cover</h3>
+                <div class="flex flex-wrap justify-center gap-3 stagger-item" id="areasGrid">
+                    <!-- Areas injected via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-20 md:py-32">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="stagger-item">
+                <span class="text-coral text-sm font-medium tracking-wider uppercase">Get In Touch</span>
+                <h2 class="font-display text-3xl md:text-5xl font-bold text-white mt-3 mb-6">Ready to Find Your Home?</h2>
+                <p class="text-gray-400 mb-12 max-w-xl mx-auto">
+                    Send us a message on WhatsApp and we'll help you find the perfect property. 
+                    We typically respond within minutes during business hours.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <a href="https://wa.me/96566593911?text=Hi%20Comfort%20Real%20Estate,%20I'm%20interested%20in%20renting%20a%20property%20in%20Kuwait" 
+                   target="_blank" rel="noopener"
+                   class="stagger-item glass-card rounded-2xl p-8 hover:border-[#25D366]/30 transition-all group">
+                    <div class="w-16 h-16 rounded-2xl bg-[#25D366]/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-[#25D366]/20 transition-colors">
+                        <i data-lucide="message-circle" class="w-8 h-8 text-[#25D366]"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">WhatsApp</h3>
+                    <p class="text-gray-400 text-sm mb-4">Chat with us directly</p>
+                    <span class="text-[#25D366] font-semibold">66593911</span>
+                </a>
+
+                <a href="https://instagram.com/comfortrealestatekw" target="_blank" rel="noopener"
+                   class="stagger-item glass-card rounded-2xl p-8 hover:border-pink-500/30 transition-all group">
+                    <div class="w-16 h-16 rounded-2xl bg-pink-500/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-pink-500/20 transition-colors">
+                        <i data-lucide="instagram" class="w-8 h-8 text-pink-500"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-white mb-2">Instagram</h3>
+                    <p class="text-gray-400 text-sm mb-4">Follow for new listings</p>
+                    <span class="text-pink-500 font-semibold">@comfortrealestatekw</span>
+                </a>
+            </div>
+
+            <div class="stagger-item glass-card rounded-2xl p-8">
+                <h3 class="font-display text-lg font-bold text-white mb-4">Business Hours</h3>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="text-gray-400">Saturday - Thursday</div>
+                    <div class="text-white">9:00 AM - 8:00 PM</div>
+                    <div class="text-gray-400">Friday</div>
+                    <div class="text-white">4:00 PM - 8:00 PM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-coral to-teal flex items-center justify-center">
+                        <i data-lucide="home" class="w-4 h-4 text-white"></i>
+                    </div>
+                    <span class="font-display font-bold text-white">Comfort Real Estate Kuwait</span>
+                </div>
+                <p class="text-sm text-gray-500">© 2024 Comfort Real Estate. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/96566593911" target="_blank" rel="noopener" class="text-gray-400 hover:text-[#25D366] transition-colors">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://instagram.com/comfortrealestatekw" target="_blank" rel="noopener" class="text-gray-400 hover:text-pink-500 transition-colors">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/96566593911?text=Hi%20Comfort%20Real%20Estate,%20I'm%20interested%20in%20a%20property" 
+       target="_blank" rel="noopener"
+       class="whatsapp-float fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+        <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+    </a>
+
+    <!-- Property Detail Modal -->
+    <div id="propertyModal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div class="modal-content glass-card rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div id="modalBody">
+                <!-- Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // DATA
+        // ============================================
+        const properties = [
+            {
+                id: 1,
+                title: "Modern 2BR Apartment with Sea View",
+                location: "Salwa",
+                type: "apartment",
+                price: 320,
+                beds: 2,
+                baths: 2,
+                area: 120,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+                description: "Stunning 2-bedroom apartment in the heart of Salwa with panoramic sea views. Features modern finishes, open-plan living, and access to a shared pool and gym.",
+                features: ["Sea View", "Central AC", "Parking", "Gym Access", "Pool"],
+                date: "2024-01-15"
+            },
+            {
+                id: 2,
+                title: "Spacious 3BR Villa with Garden",
+                location: "Yarmouk",
+                type: "house",
+                price: 850,
+                beds: 3,
+                baths: 3,
+                area: 280,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+                description: "Beautiful 3-bedroom villa in Yarmouk with a private garden and maid's room. Perfect for families looking for space and tranquility.",
+                features: ["Private Garden", "Maid Room", "Parking", "Security", "Central AC"],
+                date: "2024-01-12"
+            },
+            {
+                id: 3,
+                title: "Cozy 1BR Studio near the Beach",
+                location: "Fintas",
+                type: "apartment",
+                price: 220,
+                beds: 1,
+                baths: 1,
+                area: 65,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+                description: "Charming 1-bedroom studio just minutes from Fintas beach. Ideal for singles or couples who love the coastal lifestyle.",
+                features: ["Beach Access", "Furnished", "Balcony", "Internet Ready"],
+                date: "2024-01-18"
+            },
+            {
+                id: 4,
+                title: "Luxury 4BR House with Pool",
+                location: "Mishref",
+                type: "house",
+                price: 1200,
+                beds: 4,
+                baths: 4,
+                area: 400,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+                description: "Exceptional 4-bedroom luxury house in Mishref featuring a private swimming pool, landscaped garden, and premium finishes throughout.",
+                features: ["Private Pool", "Garden", "Smart Home", "Security System", "Driver Room"],
+                date: "2024-01-10"
+            },
+            {
+                id: 5,
+                title: "New 3BR Apartment in Prime Location",
+                location: "Bayan",
+                type: "apartment",
+                price: 450,
+                beds: 3,
+                baths: 2,
+                area: 160,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+                description: "Brand new 3-bedroom apartment in Bayan with contemporary design, spacious living areas, and close proximity to shopping centers.",
+                features: ["New Building", "Elevator", "Parking", "Storage Room"],
+                date: "2024-01-20"
+            },
+            {
+                id: 6,
+                title: "Elegant 2BR Flat with City View",
+                location: "Jabriya",
+                type: "apartment",
+                price: 380,
+                beds: 2,
+                baths: 2,
+                area: 135,
+                status: "rented",
+                image: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=800&q=80",
+                description: "Elegant 2-bedroom flat in Jabriya offering stunning city views. Recently renovated with high-quality materials and modern appliances.",
+                features: ["City View", "Renovated", "Built-in Wardrobes", "Guest Parking"],
+                date: "2024-01-08"
+            },
+            {
+                id: 7,
+                title: "Family 5BR Villa in Quiet Area",
+                location: "Salwa",
+                type: "house",
+                price: 1350,
+                beds: 5,
+                baths: 5,
+                area: 450,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+                description: "Magnificent 5-bedroom villa perfect for large families. Located in a quiet cul-de-sac in Salwa with ample parking and outdoor space.",
+                features: ["Quiet Area", "Large Garden", "Maid + Driver Rooms", "BBQ Area"],
+                date: "2024-01-14"
+            },
+            {
+                id: 8,
+                title: "Modern 1BR with Balcony",
+                location: "Yarmouk",
+                type: "apartment",
+                price: 250,
+                beds: 1,
+                baths: 1,
+                area: 75,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80",
+                description: "Contemporary 1-bedroom apartment with a spacious balcony in Yarmouk. Close to schools, supermarkets, and main roads.",
+                features: ["Balcony", "Near Schools", "Furnished Option", "24/7 Security"],
+                date: "2024-01-16"
+            },
+            {
+                id: 9,
+                title: "3BR Townhouse with Roof Terrace",
+                location: "Fintas",
+                type: "house",
+                price: 650,
+                beds: 3,
+                baths: 3,
+                area: 220,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+                description: "Stylish 3-bedroom townhouse in Fintas featuring a private roof terrace perfect for entertaining. Modern kitchen and living spaces.",
+                features: ["Roof Terrace", "Modern Kitchen", "Guest Toilet", "Storage"],
+                date: "2024-01-11"
+            },
+            {
+                id: 10,
+                title: "Premium 2BR in New Development",
+                location: "Mishref",
+                type: "apartment",
+                price: 420,
+                beds: 2,
+                baths: 2,
+                area: 140,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+                description: "Premium 2-bedroom apartment in a brand new development in Mishref. High-end finishes, smart home features, and concierge service.",
+                features: ["Smart Home", "Concierge", "Underground Parking", "Spa Access"],
+                date: "2024-01-19"
+            },
+            {
+                id: 11,
+                title: "4BR Corner Villa with Garden",
+                location: "Bayan",
+                type: "house",
+                price: 950,
+                beds: 4,
+                baths: 4,
+                area: 320,
+                status: "rented",
+                image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+                description: "Spacious corner villa in Bayan with a wrap-around garden. Excellent natural light and ventilation throughout the property.",
+                features: ["Corner Plot", "Wrap Garden", "Natural Light", "Double Garage"],
+                date: "2024-01-09"
+            },
+            {
+                id: 12,
+                title: "3BR Apartment Near Hospital",
+                location: "Jabriya",
+                type: "apartment",
+                price: 480,
+                beds: 3,
+                baths: 2,
+                area: 170,
+                status: "available",
+                image: "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80",
+                description: "Well-maintained 3-bedroom apartment in Jabriya, conveniently located near hospitals and clinics. Ideal for medical professionals.",
+                features: ["Near Hospital", "Spacious Rooms", "Guest Parking", "Elevator"],
+                date: "2024-01-17"
+            }
+        ];
+
+        const areas = [
+            "Salwa", "Yarmouk", "Fintas", "Mishref", "Bayan", 
+            "South Surra", "Jabriya", "Qortuba", "Abu Fatira", 
+            "Messila", "Abu Hassania", "Agaila", "Rawda", "Mubarak Al-Kabeer"
+        ];
+
+        // ============================================
+        // INITIALIZATION
+        // ============================================
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            initApp();
+        });
+
+        function initApp() {
+            initProgressBar();
+            initCustomCursor();
+            initNavigation();
+            initCounters();
+            initMobileMenu();
+            renderProperties(properties);
+            renderAreas();
+            initFilters();
+            initSort();
+            initHeroSearch();
+            initModal();
+            initScrollAnimations();
+            initMagneticButtons();
+            initSmoothScroll();
+        }
+
+        // ============================================
+        // PROGRESS BAR
+        // ============================================
+        function initProgressBar() {
+            window.addEventListener('scroll', () => {
+                const winScroll = document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById('progressBar').style.width = scrolled + '%';
+            }, { passive: true });
+        }
+
+        // ============================================
+        // CUSTOM CURSOR
+        // ============================================
+        function initCustomCursor() {
+            const cursor = document.getElementById('customCursor');
+            if (!cursor || window.matchMedia('(pointer: coarse)').matches) return;
+
+            let mouseX = 0, mouseY = 0;
+            let cursorX = 0, cursorY = 0;
+
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            }, { passive: true });
+
+            function animateCursor() {
+                cursorX += (mouseX - cursorX) * 0.15;
+                cursorY += (mouseY - cursorY) * 0.15;
+                cursor.style.left = cursorX + 'px';
+                cursor.style.top = cursorY + 'px';
+                requestAnimationFrame(animateCursor);
+            }
+            animateCursor();
+
+            document.querySelectorAll('a, button, [data-magnetic]').forEach(el => {
+                el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+                el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+            });
+        }
+
+        // ============================================
+        // NAVIGATION
+        // ============================================
+        function initNavigation() {
+            const nav = document.getElementById('mainNav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('nav-scrolled');
+                } else {
+                    nav.classList.remove('nav-scrolled');
+                }
+            }, { passive: true });
+        }
+
+        // ============================================
+        // COUNTERS
+        // ============================================
+        function initCounters() {
+            const counters = document.querySelectorAll('.counter');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.dataset.target);
+                        animateCounter(counter, target);
+                        observer.unobserve(counter);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(c => observer.observe(c));
+        }
+
+        function animateCounter(element, target) {
+            const duration = 2000;
+            const start = performance.now();
+
+            function update(currentTime) {
+                const elapsed = currentTime - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(eased * target);
+                element.textContent = current.toLocaleString();
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    element.textContent = target.toLocaleString();
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        // ============================================
+        // MOBILE MENU
+        // ============================================
+        function initMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.getElementById('mobileMenuBtn');
+            const close = document.getElementById('closeMobileMenu');
+            const links = document.querySelectorAll('.mobile-menu-link');
+
+            btn.addEventListener('click', () => menu.classList.remove('hidden'));
+            close.addEventListener('click', () => menu.classList.add('hidden'));
+            links.forEach(link => {
+                link.addEventListener('click', () => menu.classList.add('hidden'));
+            });
+        }
+
+        // ============================================
+        // RENDER PROPERTIES
+        // ============================================
+        function renderProperties(props) {
+            const grid = document.getElementById('propertyGrid');
+            grid.innerHTML = props.map(p => createPropertyCard(p)).join('');
+            lucide.createIcons();
+
+            // Re-attach event listeners
+            document.querySelectorAll('.property-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (!e.target.closest('a')) {
+                        const id = parseInt(card.dataset.id);
+                        openPropertyModal(id);
+                    }
+                });
+            });
+        }
+
+        function createPropertyCard(p) {
+            const whatsappText = encodeURIComponent(`Hi Comfort Real Estate, I'm interested in: ${p.title} in ${p.location} (${p.price} KD/month)`);
+            const statusBadge = p.status === 'available' 
+                ? `<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-green-500/90 text-white text-xs font-medium backdrop-blur-sm">Available Now</span>`
+                : `<span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gray-500/90 text-white text-xs font-medium backdrop-blur-sm">Rented</span>`;
+
+            return `
+                <div class="property-card glass-card rounded-2xl overflow-hidden cursor-pointer group" data-id="${p.id}">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="${p.image}" alt="${p.title}" class="card-image w-full h-full object-cover" loading="lazy">
+                        ${statusBadge}
+                        <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/50 backdrop-blur-sm text-white text-xs font-medium">
+                            ${p.type === 'apartment' ? 'Apartment' : 'House'}
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-display font-semibold text-white text-lg leading-tight group-hover:text-coral transition-colors">${p.title}</h3>
+                        </div>
+                        <div class="flex items-center gap-1 text-gray-400 text-sm mb-3">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-coral"></i>
+                            ${p.location}
+                        </div>
+                        <div class="flex items-center gap-4 text-sm text-gray-400 mb-4">
+                            <span class="flex items-center gap-1"><i data-lucide="bed" class="w-4 h-4"></i> ${p.beds} BR</span>
+                            <span class="flex items-center gap-1"><i data-lucide="bath" class="w-4 h-4"></i> ${p.baths} BA</span>
+                            <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-4 h-4"></i> ${p.area} m²</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="font-display text-2xl font-bold text-white">${p.price} <span class="text-sm font-normal text-gray-500">KD/mo</span></span>
+                            <a href="https://wa.me/96566593911?text=${whatsappText}" 
+                               target="_blank" rel="noopener"
+                               class="flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#25D366] text-white text-sm font-medium hover:bg-[#128C7E] transition-colors"
+                               onclick="event.stopPropagation()">
+                                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                                Ask
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ============================================
+        // RENDER AREAS
+        // ============================================
+        function renderAreas() {
+            const grid = document.getElementById('areasGrid');
+            grid.innerHTML = areas.map(area => `
+                <span class="px-4 py-2 rounded-full glass-card text-sm text-gray-300 hover:text-white hover:border-coral/30 transition-all cursor-default">
+                    ${area}
+                </span>
+            `).join('');
+        }
+
+        // ============================================
+        // FILTERS
+        // ============================================
+        function initFilters() {
+            const pills = document.querySelectorAll('.filter-pill');
+            pills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    pills.forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+
+                    const filter = pill.dataset.filter;
+                    let filtered = properties;
+
+                    if (filter !== 'all') {
+                        filtered = properties.filter(p => 
+                            p.type === filter || p.location === filter
+                        );
+                    }
+
+                    renderProperties(filtered);
+                });
+            });
+        }
+
+        // ============================================
+        // SORT
+        // ============================================
+        function initSort() {
+            const select = document.getElementById('sortSelect');
+            select.addEventListener('change', () => {
+                const sort = select.value;
+                let sorted = [...properties];
+
+                switch(sort) {
+                    case 'price-low':
+                        sorted.sort((a, b) => a.price - b.price);
+                        break;
+                    case 'price-high':
+                        sorted.sort((a, b) => b.price - a.price);
+                        break;
+                    case 'newest':
+                        sorted.sort((a, b) => new Date(b.date) - new Date(a.date));
+                        break;
+                }
+
+                renderProperties(sorted);
+            });
+        }
+
+        // ============================================
+        // HERO SEARCH
+        // ============================================
+        function initHeroSearch() {
+            document.getElementById('heroSearchBtn').addEventListener('click', () => {
+                const location = document.getElementById('heroLocation').value;
+                const price = document.getElementById('heroPrice').value;
+                const type = document.getElementById('heroType').value;
+
+                let filtered = properties;
+
+                if (location) {
+                    filtered = filtered.filter(p => p.location === location);
+                }
+                if (type) {
+                    filtered = filtered.filter(p => p.type === type);
+                }
+                if (price) {
+                    const [min, max] = price.split('-').map(v => v === '+' ? Infinity : parseInt(v));
+                    filtered = filtered.filter(p => {
+                        if (max === Infinity) return p.price >= min;
+                        return p.price >= min && p.price <= max;
+                    });
+                }
+
+                document.getElementById('listings').scrollIntoView({ behavior: 'smooth' });
+                renderProperties(filtered);
+            });
+        }
+
+        // ============================================
+        // MODAL
+        // ============================================
+        function initModal() {
+            const modal = document.getElementById('propertyModal');
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closePropertyModal();
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closePropertyModal();
+            });
+        }
+
+        function openPropertyModal(id) {
+            const p = properties.find(prop => prop.id === id);
+            if (!p) return;
+
+            const modal = document.getElementById('propertyModal');
+            const body = document.getElementById('modalBody');
+            const whatsappText = encodeURIComponent(`Hi Comfort Real Estate, I'm interested in: ${p.title} in ${p.location} (${p.price} KD/month). Please send more details.`);
+
+            body.innerHTML = `
+                <div class="relative">
+                    <button onclick="closePropertyModal()" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/70 transition-colors">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                    <div class="aspect-video overflow-hidden">
+                        <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full bg-coral/20 text-coral text-xs font-medium">${p.type === 'apartment' ? 'Apartment' : 'House'}</span>
+                            <span class="px-3 py-1 rounded-full bg-teal/20 text-teal text-xs font-medium">${p.location}</span>
+                            ${p.status === 'available' ? '<span class="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-medium">Available Now</span>' : '<span class="px-3 py-1 rounded-full bg-gray-500/20 text-gray-400 text-xs font-medium">Rented</span>'}
+                        </div>
+                        <h2 class="font-display text-2xl md:text-3xl font-bold text-white mb-2">${p.title}</h2>
+                        <p class="font-display text-3xl font-bold text-coral mb-6">${p.price} <span class="text-base font-normal text-gray-500">KD / month</span></p>
+
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="glass-card rounded-xl p-4 text-center">
+                                <i data-lucide="bed" class="w-6 h-6 text-coral mx-auto mb-1"></i>
+                                <p class="text-xl font-bold text-white">${p.beds}</p>
+                                <p class="text-xs text-gray-500">Bedrooms</p>
+                            </div>
+                            <div class="glass-card rounded-xl p-4 text-center">
+                                <i data-lucide="bath" class="w-6 h-6 text-teal mx-auto mb-1"></i>
+                                <p class="text-xl font-bold text-white">${p.baths}</p>
+                                <p class="text-xs text-gray-500">Bathrooms</p>
+                            </div>
+                            <div class="glass-card rounded-xl p-4 text-center">
+                                <i data-lucide="maximize" class="w-6 h-6 text-sand mx-auto mb-1"></i>
+                                <p class="text-xl font-bold text-white">${p.area}</p>
+                                <p class="text-xs text-gray-500">Sq Meters</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h3 class="font-semibold text-white mb-2">Description</h3>
+                            <p class="text-gray-400 leading-relaxed">${p.description}</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <h3 class="font-semibold text-white mb-2">Features</h3>
+                            <div class="flex flex-wrap gap-2">
+                                ${p.features.map(f => `<span class="px-3 py-1.5 rounded-lg bg-surface text-sm text-gray-300 border border-border">${f}</span>`).join('')}
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h3 class="font-semibold text-white mb-2">Location</h3>
+                            <div class="aspect-video rounded-xl bg-surface border border-border flex items-center justify-center">
+                                <div class="text-center">
+                                    <i data-lucide="map-pin" class="w-8 h-8 text-coral mx-auto mb-2"></i>
+                                    <p class="text-gray-400 text-sm">${p.location}, Kuwait</p>
+                                    <p class="text-xs text-gray-600 mt-1">Map integration ready</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://wa.me/96566593911?text=${whatsappText}" 
+                               target="_blank" rel="noopener"
+                               class="flex-1 flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-[#25D366] text-white font-semibold hover:bg-[#128C7E] transition-colors">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                Ask About This Property
+                            </a>
+                            <button onclick="closePropertyModal()" class="px-6 py-4 rounded-xl border border-border text-gray-400 hover:text-white hover:border-white/20 transition-colors">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.add('open');
+            document.body.style.overflow = 'hidden';
+            lucide.createIcons();
+        }
+
+        function closePropertyModal() {
+            const modal = document.getElementById('propertyModal');
+            modal.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        // ============================================
+        // SCROLL ANIMATIONS
+        // ============================================
+        function initScrollAnimations() {
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.utils.toArray('.stagger-item').forEach((item, i) => {
+                gsap.to(item, {
+                    scrollTrigger: {
+                        trigger: item,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none'
+                    },
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    delay: i * 0.1,
+                    ease: 'power3.out'
+                });
+            });
+        }
+
+        // ============================================
+        // MAGNETIC BUTTONS
+        // ============================================
+        function initMagneticButtons() {
+            if (window.matchMedia('(pointer: coarse)').matches) return;
+
+            document.querySelectorAll('[data-magnetic]').forEach(btn => {
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+                    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+                });
+
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = 'translate(0, 0)';
+                });
+            });
+        }
+
+        // ============================================
+        // SMOOTH SCROLL
+        // ============================================
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
